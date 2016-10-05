@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "241136058171",
+    "project_id": "firebase-highfive"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241136058171:android:8db35b720b8e3efc",
+        "android_client_info": {
+          "package_name": "com.practice.practiceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241136058171-85bn22lv4nebtt73prkuelv85trv9e08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.practice.practiceapp",
+            "certificate_hash": "A231AEAB9B138C6A7B93C9DA66D8D0B4A1F79D4D"
+          }
+        },
+        {
+          "client_id": "241136058171-s0t7p3kvgk2aju3nfb23pel9t3amq6la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBAnwbg8nh5UkpeauIwhOcFyRs0yNCj2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

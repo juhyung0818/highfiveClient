@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PracticeApp</string>
+    <string name="facebook_app_id">1149342425124209</string>
+    <string name="fb_login_protocol_scheme">fbAPP_ID</string>
+
+
+    <string-array name="menu_item_etc">
+        <item name="profile_modify">프로필 수정</item>
+        <item name="highfive">하이파이브</item>
+        <item name="setting">환경 설정</item>
+        <item name="made_reply">댓글 단 글</item>
+        <item name="my_writing">내가 쓴 글</item>
+        <item name="interested">관심 글</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

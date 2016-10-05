@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:id="@+id/my_gridView"
+            android:numColumns="3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_gridView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/colorAccent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textColor="#FFFFFF"
+            android:text="Logout"
+            android:id="@+id/logout"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/my_gridView"
+            android:id="@+id/my_name"
+            android:text="Name"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/my_name"
+            android:id="@+id/my_birth"
+            android:text="Birth"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/my_birth"
+            android:id="@+id/my_sex"
+            android:text="Sex"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/my_sex"
+            android:id="@+id/my_email"
+            android:text="E-mail"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_height="120dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:id="@+id/profile_background"
+            android:layout_alignParentBottom="true">
+        </View>
+
+        <!--<View-->
+            <!--android:layout_height="280dp"-->
+            <!--android:layout_width="240dp"-->
+            <!--android:background="@drawable/profile_background_sample1"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:id="@+id/profile_highfive_img">-->
+        <!--</View>-->
+            <com.practice.practiceapp.CircleImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/my_profile_img"
+                android:src="@drawable/profile_gray_sample1"
+                app:civ_border="true"
+                app:civ_border_width="6dp"
+                app:civ_border_color="#FFFFFF"
+                app:civ_shadow="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="40dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/etc_tab_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/icon"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="HighFive"
+            android:textColor="#FAFAFA"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

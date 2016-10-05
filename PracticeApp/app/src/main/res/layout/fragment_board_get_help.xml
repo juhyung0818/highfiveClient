@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:stateListAnimator="@null"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:elevation="6dp"
+        android:id="@+id/write_btn_get"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_margin="20dp" />
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_area_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_alignParentTop="true"
+        android:iconifiedByDefault="false">
+
+    </android.support.v7.widget.SearchView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview_get"
+        android:layout_below="@+id/search_area_get">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

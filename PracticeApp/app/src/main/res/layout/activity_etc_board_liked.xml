@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_etc_board_liked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practice.practiceapp.etc_board_liked">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/board_liked_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#1E88E5"
+        android:elevation="6dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관심 글"
+                android:id="@+id/board_liked_toolbar_title"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_liked"
+        android:layout_below="@+id/board_liked_toolbar" />
+</RelativeLayout>

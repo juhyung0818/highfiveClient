@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="2dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.practice.practiceapp.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:civ_border="true"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FFFFFF"
+                        android:src="@drawable/profile_gray_sample1"
+                        android:id="@+id/card_profile_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WRITER"
+                        android:textColor="#E91E63"
+                        android:id="@+id/card_writer"
+                        android:layout_toRightOf="@+id/card_profile_img"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/card_from"
+                        android:text="FROM"
+                        android:layout_below="@+id/card_writer"
+                        android:layout_marginTop="2dp"
+                        android:layout_alignStart="@+id/card_writer" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DATE"
+                        android:textColor="#000000"
+                        android:id="@+id/card_date"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#EEEEEE"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="TITLE"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/card_title"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

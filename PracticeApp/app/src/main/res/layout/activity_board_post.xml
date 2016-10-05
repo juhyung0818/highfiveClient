@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_board_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practice.practiceapp.board_post">
+
+
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/board_post_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentTop="true"
+    android:background="#1E88E5"
+    android:elevation="6dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:id="@+id/board_post_title"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/board_info_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f6f8"
+        android:layout_below="@+id/board_post_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp">
+
+        <com.practice.practiceapp.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/post_profile_img"
+            android:src="@drawable/profile_gray_sample1"
+            android:padding="20dp"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_writer"
+            android:text="writer"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/post_profile_img"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/board_info_area"
+        android:layout_above="@+id/post_below_button_area">
+
+        <TextView
+            android:id="@+id/board_post_content"
+            android:text="Content"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+
+
+
+    <GridLayout
+        android:id="@+id/post_below_button_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:columnCount="2">
+
+        <Button
+            android:text="하이파이브"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"/>
+
+        <Button
+            android:text="댓글 더 보기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"/>
+
+    </GridLayout>
+
+
+</RelativeLayout>
